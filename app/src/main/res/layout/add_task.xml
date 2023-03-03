@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/setTaskName"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:hint="@string/task_name_field_hint"
+        android:autofillHints="@string/task_name_field_hint"/>
+
+    <TextView
+        android:id="@+id/setDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setTaskName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:drawablePadding="8dp"
+        android:text="@string/set_due_date_button_label"
+        android:textColor="@color/primaryAccent"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/baseline_calendar_today_24"/>
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/setTaskName"
+        android:layout_toEndOf="@+id/setDueDate"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/setTaskName"
+        android:text="@string/save_button_label"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.ToDoListApp"/>
+
+</RelativeLayout>
