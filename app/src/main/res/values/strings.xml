@@ -3,6 +3,7 @@
     <string name="add_button_description">Button to add new tasks</string>
     <string name="task_name_field_hint">Enter task name</string>
     <string name="set_due_date_button_label">Set Due Date</string>
+    <string name="set_due_date_button_hint">Click to set due date</string>
     <string name="save_button_label">Save</string>
     <string name="placeholder">Placeholder</string>
 </resources>
